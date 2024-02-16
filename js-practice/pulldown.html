@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript演習課題</title>
+  </head>
+
+  <body>
+
+    <!--jsファイルに分けて書いた方-->
+  <!--<form>-->
+  <!--  <select name="age">-->
+  <!--    <option>選択してください</option>-->
+  <!--    <script type="text/javascript" src="script.js"></script>-->
+  <!--  </select>-->
+  <!--</form>-->
+
+
+
+
+  <!--htmlに書いた方-->
+  <form>
+    <select name="age">
+      <option>選択してください</option>
+      <script>
+        for(var i =18; i <= 65; i++){
+          document.write("<option>");
+          document.write(i);
+          document.write("</option>");
+        }
+      </script>
+    </select>
+  </form>
+<!--name属性気を付けよう-->
+<!--フロントエンド側は自分でつけてるので、okokだと思うけど、
+適当な名前を付けてるとバックエンド側の人間に作業が渡った時に「これは何を表してんねや？」って
+なってしまうので、データの内容を分かりやすく表している名称をつけよう！-->
+
+
+  </body>
+</html>
+
+

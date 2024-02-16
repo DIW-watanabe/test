@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>slideshow</title>
+    <!--bxsliderのプラグインを読み込み-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+    // HTMLドキュメントが完全に読み込まれた後に指定された関数を実行するjQueryのメソッド
+    // function[無名関数]➞$(document).ready()が実行された時に実行される処理が定義
+    // $(document).ready➞[jQueryのメソッドで、HTMLドキュメントが完全に読み込まれた後に指定された関数を実行する役割]
+      $(document).ready(function(){
+        // .abcというクラスが付いた要素に対して、bxSliderを適用しています。
+        // これにより、指定されたオプションを使用してスライドショーが作成されます。
+        // $("セレクタ").メソッド(引数); });
+        $(".abc").bxSlider({
+          // スライドの自動再生を選択します
+          // デフォルトはfalse
+          auto: true,
+          // スライドの動作を選択します
+          // ’horizontal’、’vertical’、’fade’があって、
+          // それぞれ横・縦・フェードで画像が切り替わります
+          mode: 'horizontal',
+          // スライド動作の速度を指定します。1000=1秒
+          speed: 2000,
+          // スライドの幅を指定（現在は400px）
+          slideWidth: 400
+        });
+      });
+// 上記はjsファイルに記載でも動く模様→memo内参考サイトより
+
+    </script>
+  </head>
+
+<!--html画面で表示される画像の指定-->
+  <body>
+    <div class="abc">
+      <div><img src= "../imgs/jQuery_image1.jpg"></div>
+      <div><img src= "../imgs/jQuery_image2.jpg"></div>
+      <div><img src= "../imgs/jQuery_image3.jpg"></div>
+    </div>
+  </body>
+</html>

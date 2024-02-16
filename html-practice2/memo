@@ -1,0 +1,108 @@
+◎記事を２列で表示するときに参考にしたサイト◎
+
+https://qiita.com/NonGlutinousRice/items/1c7870f5d0e4838d35a0
+【グリットレイアウトで２列の記事を制作する】
+https://webukatu.com/wordpress/blog/32340/#2
+【２カラムを作る３つの方法】
+
+◎画像がうまく出せなかったときに確認した事◎
+
+・表記ミス→srcになってるか？
+・パスはあってるか？→ディレクトリ構造に対して表記はあってるか？
+
+◎解決に至った説明◎
+
+- images/
+    - diblog_logo.jpg
+- html/
+    - index.html
+この場合、index.html ファイルが images ディレクトリの1つ上のディレクトリ内にあり、
+diblog_logo.jpg を参照したいとします。
+
+その場合、
+index.html における画像のパスは次のようになります:
+<img src="../images/diblog_logo.jpg" alt="サンプル画像">
+
+../ は1つ上のディレクトリを示し、その後に images/diblog_logo.jpg が続くことで、
+index.html ファイルから見て images ディレクトリ内の diblog_logo.jpg を参照することができます。
+
+htmlディレクトリの中にimageディレクトリがある場合、そのディレクトリ構造は次のようになるでしょう：
+- html/
+    - images/
+        - diblog_logo.jpg
+    - index.html
+
+この場合、index.html ファイルから
+images ディレクトリ内の diblog_logo.jpg を参照するためのパスは次のようになります：
+<img src="images/diblog_logo.jpg" alt="サンプル画像">
+
+ここでは、index.html から見て、
+同じ階層にある images ディレクトリ内の diblog_logo.jpg を指定するために、
+images/diblog_logo.jpg という相対パスを使っています。
+
+
+◎試しにテキストを見ないで、書いたコード。
+        <div class="main-box1">
+          プログラミングに役立つ情報
+        </div>
+
+        <div class="main-img">
+          2017.<br>
+          <img src="../imgs/bookstore.jpg" alt="画像が表示されます"><br>
+          D.I.Blogは<br>
+        </div>
+
+          記事中身<br>
+          <!--flexとかで横並びにできる？？-->
+          <!--検証上は↓にdisplay-flexかけるといい感じに横になるけど、なんかblockかかっててflexが消される-->
+          <!--display flaxを使用してそれっぽくしたパターンの記述-->
+        <div class="list-wrap" >
+          <div class="content1" style="display:flex; justify-content: center;">
+              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
+              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
+              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
+              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
+          </div>
+          <div class="content2" style="display:flex; justify-content: center;">
+              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
+              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
+              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
+              <img src="../imgs/pic1.jpg" style="width: 300px; height: auto; padding:10px;">
+          </div>
+        </div>
+        <!--テーブルを使用して画面を作った時の記述-->
+        <!--画像のサイズ変更ができない-->
+        <div class="list-wrap">
+          <table border="0" cellspacing="10">
+            <tr>
+              <td><img src="../imgs/pic1.jpg"></td>
+              <td><img src="../imgs/pic1.jpg"></td>
+              <td><img src="../imgs/pic1.jpg"></td>
+              <td><img src="../imgs/pic1.jpg"></td>
+            </tr>
+          </table>
+          <table border="0" cellspacing="10">
+            <tr>
+              <td><img src="../imgs/pic1.jpg"></td>
+              <td><img src="../imgs/pic1.jpg"></td>
+              <td><img src="../imgs/pic1.jpg"></td>
+              <td><img src="../imgs/pic1.jpg"></td>
+            </tr>
+          </table>
+        </div>
+        <!--テキストcss１０限の記述-->
+
+/*display flexを使うときの記述ｃｓｓ*/
+/*.content1{*/
+/*  justify-content: center;*/
+/*}*/
+
+/*.list-wrap img {*/
+/*  width: 100px;*/
+/*  height: auto;*/
+/*}*/
+
+レイアウトの時はboxでおおまかにpx決めてもいいけど、
+実際のBlogを作る時は、項目が増えるごとにスクロールする、または見せたい内容全部見せる
+ためにはhightは入れない。
+フッターがかさなってきちまう。

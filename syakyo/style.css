@@ -1,0 +1,205 @@
+/*css写経３時間目記載内容*/
+header{
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: 60px;
+  background-color: black;
+}
+.logo{
+  float: left;
+  padding-left: 10px;
+  color: white;
+  font-size: 25px;
+  line-height: 60px;
+}
+
+#setsumei{
+  font-size: 20px;
+  font-family: serif;
+  border:5px dotted blue;
+}
+
+p{
+  font-size: 20px;
+}
+
+#ber{
+  position: fixed;
+  bottom: 0px;
+  width:100%;
+  height: 50px;
+  background-color: lightgray;
+  left:0;
+}
+
+.bottomline{
+  position: fixed;
+  color: white;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+  background-color: gray;
+  text-align: center;
+}
+
+.box .box1{
+  float: left;
+  width: 50px;
+  height:50px;
+  text-align: center;
+  background-color: skyblue;
+}
+
+.box .box2{
+  background-color: red;
+  float: left;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.box .box3{
+  background-color: green;
+  float: left;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+
+/*h1{*/
+/*  border-left:5px solid black;*/
+/*  border-bottom:2px solid black;*/
+/*}*/
+/*.main{*/
+/*  color: blue; border-left:10px*/
+/*  solid red;*/
+/*  border-bottom: 5px solid red;*/
+/*}*/
+
+/*body{*/
+/*  font-family: serif*/
+/*}*/
+/*.hello{*/
+/*  text-align:center;*/
+/*}*/
+/*h2{*/
+/*  text-align: left;*/
+/*  font-size: 40px;*/
+/*  color: blue;*/
+/*}*/
+/*h2.no1{*/
+/*  color:red;*/
+/*}*/
+
+/*h2.no2{*/
+/*  color: blue*/
+/*}*/
+/*.a{*/
+/*  color: red;*/
+/*  text-align: left;*/
+/*}*/
+
+/*.b{*/
+/*  font-size: 30px;*/
+/*}*/
+
+/*.ab{*/
+/*  background-color: green;*/
+/*}*/
+
+/*.abc{*/
+  /*font-size: 20px;*/
+/*  font-family: "meiryo",serif;*/
+/*  font-size: 30px;*/
+/*  text-align: left;*/
+/*  color: blue;*/
+/*}*/
+/*.XYZ{*/
+/*  color: yellow;*/
+/*}*/
+
+/*.xyz{*/
+/*  color: yellow;*/
+/*}*/
+/*ul{*/
+/*  list-style-type: none;*/
+  /*４時間目記載内容*/
+/*  color: red;*/
+/*  font-size: 30px;*/
+/*}*/
+/*.nol{*/
+/*  color: red;*/
+/*}*/
+
+/*#main{*/
+/*  text-align: center;*/
+/*}*/
+
+/*#main{*/
+/*  color: orange;*/
+/*}*/
+
+/*#main h2{ */
+/*  font-size:10px;*/
+
+/*}*/
+
+
+/*.sub{*/
+/*  color: red;*/
+/*  font-size: 20px;*/
+/*}*/
+/*.word{*/
+/*  color: blue;*/
+/*  font-family: serif*/
+/*}*/
+
+/*h1,h2,h3{*/
+/*  color: green;*/
+/*}*/
+
+/*.name,.name2{*/
+/*  color:blue;*/
+/*  text-align: center;*/
+/*}*/
+
+
+
+/*css写経２時間目に記載した内容↓↓↓*/
+/*body{*/
+/*  color: pink; background-color: gray;*/
+/*}*/
+
+/*h1{*/
+/*  color: blue;*/
+/*  font-size: 15px;*/
+/*}*/
+
+/*.abc{*/
+/*  Font-size:10px;*/
+/*  color: blue;*/
+/*}*/
+
+/*.xyz{*/
+/*  color: brown;*/
+/*  background-color: black;*/
+/*}*/
+
+/*p{*/
+/*  color: red;*/
+/*}*/
+
+/*#aisatsu{*/
+/*  font-size: 20px;*/
+/*  color: green;*/
+/*}*/
+
+/*#orei{*/
+/*  font-size:*/
+/*  30px; color:*/
+/*  yellow;*/
+/*}*/
