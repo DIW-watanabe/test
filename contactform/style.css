@@ -1,0 +1,50 @@
+h1 {
+  /*ブラウザ画面全体に対して中央に来る*/
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom:20px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom:10px;
+  width: 500px;
+  font-size: 20px;
+  border-left:4px red solid;
+  background-color: #f1f1f1;
+}
+
+/*form {*/
+  /*display:table;*/
+  /*text-align: center;*/
+/*  margin: 0 auto;*/
+/*}*/
+
+form {
+  width: 500px; /* 必要に応じて幅を調整してください */
+  margin: 0 auto;
+  background-color: #fbfbfb;
+  border: 3px solid #ebebeb ;
+  border-radius: 10px;
+}
+
+form div {
+  padding: 15px;
+}
+
+.text, textarea, .dropdown{
+  padding:5px;
+  border: 1px solid #c3c3c3 ;
+  padding: 5px;
+  color: #999;
+  background: #fff;
+}
+
+ .submit {
+  border:1px solid lightgray;
+  padding: 4px 10px;
+  /*フォントの色*/
+  color: white;
+  background-color: #bfbfbf;
+  border-radius: 5px;
+  /*ボタンの陰になってる部分*/
+  border-bottom:2px solid gray;
+ }

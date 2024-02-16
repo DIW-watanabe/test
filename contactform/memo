@@ -1,0 +1,20 @@
+https://catnose.me/learning/html/label#google_vignette
+labelについて
+https://www.sejuku.net/blog/55523
+css中央ぞろえ
+http://lab.agr.hokudai.ac.jp/useful/utile/BlockInline.htm
+インライン要素・ブロック要素のタグ一覧
+
+絶対配置を指定する。画面右角を起点として要素を配置する。
+要素を通常のフローから取り外し、親要素や他の要素に対して相対的な位置を指定できるようにします。
+  /*position: absolute;*/
+画面上から５０％のとこ
+  /*top: 50%;*/
+画面左から５０％のとこ
+  /*left: 50%;*/
+要素の中央が基準点になる
+  /*transform: translate(-50%, -50%);*/
+  
+  カンマ区切りは複数の要素の大してまとめて適用
+  スペース区切りは○○タグの中の○○タグ（子、孫）にのみ適用
+  連結２つの要素が組み合わされた場合にのみ適用

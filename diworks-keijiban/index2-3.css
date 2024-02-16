@@ -1,0 +1,229 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-logo img{
+  padding-left:20px;
+  width: 26%;
+  height: 100%;
+}
+
+.header-menu-bar{
+  margin: 0 auto;
+  width: 98%;
+  hight:60px;
+  background-color: black;
+}
+
+.header-menu{
+  padding-left:20px;
+  left:0px;
+  width: 100%;
+  height: 60px;
+}
+
+header ul{
+  float: left;
+  line-height: 40px;
+}
+
+header ul li {
+  float: left;
+  list-style: none;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+
+}
+
+h1 {
+  /*ブラウザ画面全体に対して中央に来る*/
+  /* margin: 0 auto; */
+  margin-top: 30px;
+  margin-bottom:20px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom:10px;
+  width: 75%;
+  font-size: 20px;
+  border-left:4px red solid;
+  background-color: #f1f1f1;
+}
+
+form {
+  width: 75%; /* 必要に応じて幅を調整してください */
+  /* margin: 0 auto; */
+  background-color: #fbfbfb;
+  border: 3px solid #ebebeb ;
+  border-radius: 10px;
+}
+
+
+
+form div {
+  padding: 15px;
+}
+
+.text, textarea, .dropdown{
+  padding:5px;
+  border: 1px solid #c3c3c3 ;
+  padding: 5px;
+  color: #999;
+  background: #fff;
+}
+
+.submit {
+  border:1px solid lightgray;
+  padding: 4px 10px;
+  /*フォントの色*/
+  color: white;
+  background-color: #bfbfbf;
+  border-radius: 5px;
+  /*ボタンの陰になってる部分*/
+  border-bottom:2px solid gray;
+}
+
+.kiji {
+  border: 1px solid black;
+  margin-top: 30px;
+  margin-bottom:20px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom:10px;
+  width: 75%;
+}
+
+main{
+  clear: both;
+}
+
+.main-container{
+  width: 98%;
+  height:95%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.main-blog-title{
+  border-left:5px solid black;
+  border-bottom:2px solid black;
+  padding-left:20px;
+  width: 100%;
+}
+
+.date{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-blog{
+  float: left;
+  width: 80%;
+  height: 100%;
+  margin-bottom: 40px;
+  margin-top: 10px;
+
+}
+.main-sidebar{
+  float: right;
+  width: 20%;
+  margin-bottom: 40px
+}
+
+h3{
+  border-bottom:3px dotted lightgray;
+  margin-top:45px;
+  width: 90%;
+}
+
+.main-sidebar ul{
+  margin-top: 30px;
+}
+
+.main-sidebar ul li{
+  list-style: none;
+  padding-right: 20px;
+  color: black;
+  font-size: 14px;
+  margin-left: 20px;
+  line-height: 20px;
+  letter-spacing : 0.2em;
+}
+
+.box1{
+  float: left;
+  width: 100%;
+  height: 50%;
+  padding-right: 20px;
+}
+
+.box1 img{
+  width: 100%;
+  height: 100%;
+}
+
+.box1-text{
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.box2{
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding-right: 20px;
+}
+
+.box2-text{
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.box2-imgbox-background-color{
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+  text-align: center;
+}
+
+.box2 img{
+  width: 240px;
+  margin:30px 0px -10px 10px;
+
+}
+
+.box2-imgbox{
+  display:inline-block;
+
+}
+.box2-imgbox p{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.box2-imgbox2{
+  display: inline-block;
+}
+.box2-imgbox2 p{
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+footer{
+  clear: left;
+  margin: 0 auto;
+  width: 100%;
+  height: 60px;
+  color: white;
+  font-size: 20px;
+  background-color: black;
+  text-align: center;
+  line-height: 60px;
+  letter-spacing : 0.11em;
+}
